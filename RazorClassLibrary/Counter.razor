@@ -1,0 +1,20 @@
+@namespace RazorClassLibrary
+
+<div>
+	<div>
+		Counter: @_counter
+	</div>
+	
+	<button type="button" @onclick="Count">
+		Count
+	</button>
+</div>
+
+@code {
+	int _counter;
+
+	void Count()
+	{
+		_counter++;
+	}
+}
